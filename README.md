@@ -18,6 +18,8 @@ let rippllino = new Rippllino({  rplThemeColor: #ffffff, rippllinoAnimateOn: 'mo
 ## After doing the steps mentioned above 
 In your html page, add `data-rippllino="true"` tag to your html `button` or/and `a`. But, for now, make sure that you've proper styles to your buttons/a in the html in order to add ripples to it...
 
+Have a look at it [here](https://swaroop-d.github.io/Rippllino---Creative-button-library)
+
 ###### Latest version of the library will be thrown right at the landing page..
 
 ##### That's all for now, see you when the next update comes... Goodbye!!
