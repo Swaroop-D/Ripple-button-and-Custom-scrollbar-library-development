@@ -1,0 +1,19 @@
+# sass
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
+
+# vs code
+.settings/
+.vscode/
+
+# grunt
+.grunt
+dist/
+
+# node
+node_modules/
+logs
+*.log
+npm-debug.log*
