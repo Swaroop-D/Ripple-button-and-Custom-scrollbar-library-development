@@ -11,13 +11,13 @@ $bg-dark-2:  #ffffff25;
 }
 html {
   background-color: $bg-dark-1;
+  color: #fff;
   overflow-x: hidden;
   font-family: sans-serif;
 }
 
+body {
 
-  body {
-    color: #fff;
     width: 100vw;
     display: flex;
     align-items: center;
