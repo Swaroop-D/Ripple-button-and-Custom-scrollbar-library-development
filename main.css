@@ -1,33 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-html {
-  background-color: #222;
-  overflow-x: hidden;
-  font-family: sans-serif;
-}
-
-body {
-  color: #fff;
-  width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 50px 0;
-}
-
-body .preloader {
+.preloader {
   position: fixed;
   display: none;
   top: 0;
@@ -50,7 +22,7 @@ body .preloader {
   transition: opacity 500ms ease;
 }
 
-body .preloader .center-container {
+.preloader .center-container {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -64,11 +36,11 @@ body .preloader .center-container {
   width: 450px;
 }
 
-body .preloader .center-container span {
+.preloader .center-container span {
   font-size: 1.5em;
 }
 
-body .preloader .center-container .rippll-container {
+.preloader .center-container .rippll-container {
   height: 100%;
   width: 100px;
   display: -webkit-box;
@@ -82,7 +54,7 @@ body .preloader .center-container .rippll-container {
           justify-content: center;
 }
 
-body .preloader .center-container .rippll-container preloader-ripple {
+.preloader .center-container .rippll-container preloader-ripple {
   -webkit-transition: opacity 250ms ease;
   transition: opacity 250ms ease;
   -webkit-animation: pip-ripple 1.75s linear forwards infinite;
@@ -134,6 +106,34 @@ body .preloader .center-container .rippll-container preloader-ripple {
   100% {
     opacity: 0;
   }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  background-color: #222;
+  color: #fff;
+  overflow-x: hidden;
+  font-family: sans-serif;
+}
+
+body {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 50px 0;
 }
 
 body .btn-pri {

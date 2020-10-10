@@ -2,6 +2,7 @@
 $code-font : 'Fira Code', monospace;
 $bg-dark-1: #222;
 $bg-dark-2:  #ffffff25;
+@import 'page_load_animation'; // page load animation
 
 // css reset
 * {
@@ -24,69 +25,7 @@ body {
     justify-content: center;
     padding: 50px 0;
 
-    .preloader {
-      position: fixed;
-      display: none;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      display: flex;
-      width: 100vw;
-      align-items: center;
-      justify-content: center;
-      background-color:$bg-dark-1;
-      z-index: 999;
-      transition: opacity 500ms ease;
 
-      .center-container {
-        position: absolute;
-        display: flex;
-        align-items: center;
-        height: 100px;
-        justify-content: space-around;
-        width: 450px;
-        span {
-          font-size: 1.5em;
-        }
-        .rippll-container {
-          height: 100%;
-          width: 100px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          preloader-ripple {
-            transition: opacity 250ms ease;
-            animation: pip-ripple 1.75s linear forwards infinite;
-            background: #ffffff00;
-            border-radius: 50%;
-            position: absolute;
-            transition: opacity 500ms ease;
-          }
-
-          @keyframes pip-ripple {
-            0% {
-              opacity: 0;
-            }
-            40% {
-              opacity: 0.5;
-              height: 25px;
-              width: 25px;
-              background: #ffffff25;
-            }
-            80% {
-              opacity: 0;
-              width: 50px;
-              height: 50px;
-              background: #ffffff;
-            }
-            100% {
-              opacity: 0;
-            }
-          }
-        }
-      }
-    }
 
     .btn-pri {
       background: linear-gradient(-110deg, #5db1ff 10%, #166ab8 80%);
