@@ -3,6 +3,7 @@ $code-font : 'Fira Code', monospace;
 $bg-dark-1: #222;
 $bg-dark-2:  #ffffff25;
 @import 'page_load_animation'; // page load animation
+@import 'button';
 
 // css reset
 * {
@@ -18,7 +19,6 @@ html {
 }
 
 body {
-
     width: 100vw;
     display: flex;
     align-items: center;
@@ -27,38 +27,7 @@ body {
 
 
 
-    .btn-pri {
-      background: linear-gradient(-110deg, #5db1ff 10%, #166ab8 80%);
-    }
 
-    .btn-sec {
-      background: linear-gradient(-110deg, #4ad49f 10%, #0a8340 80%);
-    }
-
-    .btn-warn {
-      background: linear-gradient(-110deg, #ffb34f 10%, #dd9613 80%);
-    }
-
-    .btn-err {
-      background: linear-gradient(-110deg, #f76743 10%, #c21c1c 80%);
-    }
-
-    .btn {
-      border: none;
-      color: #fff;
-      padding: 0.75em 1em;
-      margin: 20px 0;
-      outline: none;
-      border-radius: 7.5px;
-      cursor: pointer;
-      position: sticky;
-      text-decoration: none;
-      display: block;
-      text-decoration: none;
-      user-select: none;
-      width: fit-content;
-      font-size: 1em;
-    }
 
     main {
       width: 1200px;

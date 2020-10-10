@@ -108,6 +108,45 @@
   }
 }
 
+.btn, .btn-pri, .btn-sec, .btn-warn, .btn-err {
+  border: none;
+  color: #fff;
+  padding: 0.75em 1em;
+  margin: 20px 0;
+  outline: none;
+  border-radius: 7.5px;
+  cursor: pointer;
+  position: -webkit-sticky;
+  position: sticky;
+  text-decoration: none;
+  display: block;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 1em;
+}
+
+.btn-pri {
+  background: linear-gradient(-110deg, #5db1ff 10%, #166ab8 80%);
+}
+
+.btn-sec {
+  background: linear-gradient(-110deg, #4ad49f 10%, #0a8340 80%);
+}
+
+.btn-warn {
+  background: linear-gradient(-110deg, #ffb34f 10%, #dd9613 80%);
+}
+
+.btn-err {
+  background: linear-gradient(-110deg, #f76743 10%, #c21c1c 80%);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -134,45 +173,6 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 50px 0;
-}
-
-body .btn-pri {
-  background: linear-gradient(-110deg, #5db1ff 10%, #166ab8 80%);
-}
-
-body .btn-sec {
-  background: linear-gradient(-110deg, #4ad49f 10%, #0a8340 80%);
-}
-
-body .btn-warn {
-  background: linear-gradient(-110deg, #ffb34f 10%, #dd9613 80%);
-}
-
-body .btn-err {
-  background: linear-gradient(-110deg, #f76743 10%, #c21c1c 80%);
-}
-
-body .btn {
-  border: none;
-  color: #fff;
-  padding: 0.75em 1em;
-  margin: 20px 0;
-  outline: none;
-  border-radius: 7.5px;
-  cursor: pointer;
-  position: -webkit-sticky;
-  position: sticky;
-  text-decoration: none;
-  display: block;
-  text-decoration: none;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  font-size: 1em;
 }
 
 body main {
