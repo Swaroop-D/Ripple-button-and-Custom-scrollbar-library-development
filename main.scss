@@ -1,19 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
 $code-font : 'Fira Code', monospace;
 $bg-dark-1: #222;
-$bg-dark-2: d;
+$bg-dark-2:  #ffffff25;
 
 // css reset
 * {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
   box-sizing: border-box;
 }
-
 html {
   background-color: $bg-dark-1;
   overflow-x: hidden;
+  font-family: sans-serif;
+}
+
 
   body {
     color: #fff;
@@ -120,34 +121,22 @@ html {
       font-size: 1em;
     }
 
-    .main {
+    main {
       width: 1200px;
     }
   }
-}
+
 
 code {
   font-family: $code-font;
-  background: #ffffff25;
-  padding: 2.5px 5px;
-  border-radius: 5px;
-}
-
-p {
-  line-height: 2;
-}
-
-.rippllino-code {
-  background: #f4f4f425;
-  width: fit-content;
-  padding: 7.5px 15px;
-  font-family: $code-font;
-  margin-top: 15px;
-  border-radius: 5px;
+  background: $bg-dark-2;
+  padding-left: 0.25em;
+  padding-right: 0.25em;
+  border-radius: 0.2em;
 }
 
 note {
-  color: #ffb5a2;
+  color: #ffaa94;
 }
 
 .buttons {
@@ -159,4 +148,10 @@ note {
 
 h1, h2, h3 {
   text-align: center;
+  margin: 0.7rem auto;
+}
+
+p {
+  padding: 1.3em auto;
+  line-height: 1.6em;
 }

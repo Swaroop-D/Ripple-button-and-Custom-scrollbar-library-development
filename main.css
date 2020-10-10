@@ -2,7 +2,6 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -10,9 +9,10 @@
 html {
   background-color: #222;
   overflow-x: hidden;
+  font-family: sans-serif;
 }
 
-html body {
+body {
   color: #fff;
   width: 100vw;
   display: -webkit-box;
@@ -27,7 +27,7 @@ html body {
   padding: 50px 0;
 }
 
-html body .preloader {
+body .preloader {
   position: fixed;
   display: none;
   top: 0;
@@ -50,7 +50,7 @@ html body .preloader {
   transition: opacity 500ms ease;
 }
 
-html body .preloader .center-container {
+body .preloader .center-container {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -64,11 +64,11 @@ html body .preloader .center-container {
   width: 450px;
 }
 
-html body .preloader .center-container span {
+body .preloader .center-container span {
   font-size: 1.5em;
 }
 
-html body .preloader .center-container .rippll-container {
+body .preloader .center-container .rippll-container {
   height: 100%;
   width: 100px;
   display: -webkit-box;
@@ -82,7 +82,7 @@ html body .preloader .center-container .rippll-container {
           justify-content: center;
 }
 
-html body .preloader .center-container .rippll-container preloader-ripple {
+body .preloader .center-container .rippll-container preloader-ripple {
   -webkit-transition: opacity 250ms ease;
   transition: opacity 250ms ease;
   -webkit-animation: pip-ripple 1.75s linear forwards infinite;
@@ -136,23 +136,23 @@ html body .preloader .center-container .rippll-container preloader-ripple {
   }
 }
 
-html body .btn-pri {
+body .btn-pri {
   background: linear-gradient(-110deg, #5db1ff 10%, #166ab8 80%);
 }
 
-html body .btn-sec {
+body .btn-sec {
   background: linear-gradient(-110deg, #4ad49f 10%, #0a8340 80%);
 }
 
-html body .btn-warn {
+body .btn-warn {
   background: linear-gradient(-110deg, #ffb34f 10%, #dd9613 80%);
 }
 
-html body .btn-err {
+body .btn-err {
   background: linear-gradient(-110deg, #f76743 10%, #c21c1c 80%);
 }
 
-html body .btn {
+body .btn {
   border: none;
   color: #fff;
   padding: 0.75em 1em;
@@ -175,34 +175,20 @@ html body .btn {
   font-size: 1em;
 }
 
-html body .main {
+body main {
   width: 1200px;
 }
 
 code {
   font-family: "Fira Code", monospace;
   background: #ffffff25;
-  padding: 2.5px 5px;
-  border-radius: 5px;
-}
-
-p {
-  line-height: 2;
-}
-
-.rippllino-code {
-  background: #f4f4f425;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 7.5px 15px;
-  font-family: "Fira Code", monospace;
-  margin-top: 15px;
-  border-radius: 5px;
+  padding-left: 0.25em;
+  padding-right: 0.25em;
+  border-radius: 0.2em;
 }
 
 note {
-  color: #ffb5a2;
+  color: #ffaa94;
 }
 
 .buttons {
@@ -221,5 +207,11 @@ note {
 
 h1, h2, h3 {
   text-align: center;
+  margin: 0.7rem auto;
+}
+
+p {
+  padding: 1.3em auto;
+  line-height: 1.6em;
 }
 /*# sourceMappingURL=main.css.map */
