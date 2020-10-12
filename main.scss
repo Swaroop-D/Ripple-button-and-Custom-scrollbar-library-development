@@ -1,144 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+$code-font : 'Fira Code', monospace;
+$bg-dark-1: #222;
+$bg-dark-2:  #ffffff25;
+@import 'page_load_animation'; // page load animation
+@import 'button';
+
+// css reset
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+html {
+  background-color: $bg-dark-1;
+  color: #fff;
+  overflow-x: hidden;
+  font-family: sans-serif;
 }
 
-html {
-  background-color: #222;
-  overflow-x: hidden;
-
-  body {
-    color: #fff;
+body {
     width: 100vw;
-    // height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 50px 0;
 
-    .preloader {
-      position: fixed;
-      display: none;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      display: flex;
-      width: 100vw;
-      align-items: center;
-      justify-content: center;
-      background-color: #222;
-      z-index: 999;
-      transition: opacity 500ms ease;
 
-      .center-container {
-        position: absolute;
-        display: flex;
-        align-items: center;
-        height: 100px;
-        justify-content: space-around;
-        width: 450px;
-        span {
-          font-size: 1.5em;
-        }
-        .rippll-container {
-          height: 100%;
-          width: 100px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          preloader-ripple {
-            transition: opacity 250ms ease;
-            animation: pip-ripple 1.75s linear forwards infinite;
-            background: #ffffff00;
-            border-radius: 50%;
-            position: absolute;
-            transition: opacity 500ms ease;
-          }
 
-          @keyframes pip-ripple {
-            0% {
-              opacity: 0;
-            }
-            40% {
-              opacity: 0.5;
-              height: 25px;
-              width: 25px;
-              background: #ffffff25;
-            }
-            80% {
-              opacity: 0;
-              width: 50px;
-              height: 50px;
-              background: #ffffff;
-            }
-            100% {
-              opacity: 0;
-            }
-          }
-        }
-      }
-    }
 
-    .btn-pri {
-      background: linear-gradient(-110deg, #5db1ff 10%, #166ab8 80%);
-    }
 
-    .btn-sec {
-      background: linear-gradient(-110deg, #4ad49f 10%, #0a8340 80%);
-    }
-
-    .btn-warn {
-      background: linear-gradient(-110deg, #ffb34f 10%, #dd9613 80%);
-    }
-
-    .btn-err {
-      background: linear-gradient(-110deg, #f76743 10%, #c21c1c 80%);
-    }
-
-    .btn {
-      border: none;
-      color: #fff;
-      padding: 0.75em 1em;
-      margin: 20px 0;
-      outline: none;
-      border-radius: 7.5px;
-      cursor: pointer;
-      position: sticky;
-      text-decoration: none;
-      display: block;
-      text-decoration: none;
-      user-select: none;
-      width: fit-content;
-      font-size: 1em;
-    }
-
-    .main {
+    main {
       width: 1200px;
     }
   }
-}
+
 
 code {
-  font-family: 'Fira Code', monospace;
-  background: #ffffff25;
-  padding: 2.5px 5px;
-  border-radius: 5px;
-}
-
-p {
-  line-height: 2;
-}
-
-.rippllino-code {
-  background: #f4f4f425;
-  width: fit-content;
-  padding: 7.5px 15px;
-  font-family: 'Fira Code', monospace;
-  margin-top: 15px;
-  border-radius: 5px;
+  font-family: $code-font;
+  background: $bg-dark-2;
+  padding-left: 0.25em;
+  padding-right: 0.25em;
+  border-radius: 0.2em;
 }
 
 note {
-  color: #ffb5a2;
+  color: #ffaa94;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  margin: 0.7rem auto;
+}
+
+p {
+  padding: 1.3em auto;
+  line-height: 1.6em;
 }

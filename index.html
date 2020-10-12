@@ -6,14 +6,9 @@
   <title>Rippllino • The basket of creative button</title>
   <link rel="stylesheet" href="./main.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Fira+Code:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600;700;800&family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
 </head>
 
-<body id="body" class="ripple-color-dark">
+<body>
 
   <div class="preloader" id="preloader">
     <div class="center-container">
@@ -24,39 +19,28 @@
     </div>
   </div>
 
-  <div class="main">
+  <main>
     <h1>Rippllino v0.1.1@alpha</h1>
-
-    <button class="btn btn-pri" data-rippllino="true">A Rippllino button</button>
-    <button class="btn btn-sec" data-rippllino="true">A Rippllino button</button>
-    <button class="btn btn-warn" data-rippllino="true">A Rippllino button</button>
-    <button class="btn btn-err" data-rippllino="true">A Rippllino button</button>
-
+    <section class="buttons">
+      <button class="btn-pri" data-rippllino="true">A Rippllino button</button>
+      <button class="btn-sec" data-rippllino="true">A Rippllino button</button>
+      <button class="btn-warn" data-rippllino="true">A Rippllino button</button>
+      <button class="btn-err" data-rippllino="true">A Rippllino button</button>
+    </section>
     <h2>The Ripplling Docs...</h2>
-    <p>If you liked the thought, please consider using it... The next update for this library will have more classes and
-      more customization.</p>
-    <br>
+    <p>
+      If you liked the thought, please consider using it... The next update for this library will have more classes and more customization.
+    </p>
     <h3>How to use it??</h3>
     <p>Download the source files, copy the <code>rippllino.js</code> file to your source folder.
-      <br>
-
       Now add a <code>script</code> tag in your html body. Then through in the value down below...
       <br>
-    <div class="rippllino-code">
-      let rippllino = new Rippllino({
-      <br>
-      rplThemeColor: "#333333",
-      <br>
-
-      rippllinoAnimateOn: "mousedown",
-      <br>
-
-      animationDuration: 1
-      });
-    </div>
-
-    <br>
-
+      <code>
+        let rippllino = new Rippllino({
+          rplThemeColor: "#333333",
+          rippllinoAnimateOn: "mousedown",
+          animationDuration: 1 });
+      </code>
     <p>However, <code>rplThemeColor</code>, <code>rippllinoAnimateOn</code>, <code>animationDuration</code> can have
       custom user properties. 'rplThemeColor', can have hex color codes and <code>rgb</code> values.
       'rippllinoAnimateOn' can have all <code>mouseEvents</code> in JavaScript</p>
@@ -78,9 +62,9 @@
     <note>This documentation will get updated as soon as possible!</note>
     </p>
 
-    <button class="btn btn-sec" data-rippllino="true">Happy
+    <button class="btn-sec" data-rippllino="true">Happy
       coding my friend!!</button>
-  </div>
+  </main>
 
   <script src="rippllino.js"></script>
 
@@ -99,11 +83,3 @@
 </body>
 
 </html>
-
-<!-- 
-  font-family: 'Arvo', serif;
-  font-family: 'Fira Code', monospace;
-  font-family: 'Open Sans', sans-serif;
-  font-family: 'Rubik', sans-serif;
-  font-family: 'Poppins', sans-serif;
- -->
