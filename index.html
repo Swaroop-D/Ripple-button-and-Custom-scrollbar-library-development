@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Rippllino • The basket of creative button</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/rippllino.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+  <!-- <div class="preloader" id="preloader">
+    <div class="center-container">
+      <span>Ripplling the demo...</span>
+      <div class="rippll-container">
+        <preloader-ripple></preloader-ripple>
+      </div>
+    </div>
+  </div> -->
+
+  <main>
+    <h1>Rippllino v0.2.5@alpha</h1>
+
+    <div class="normal">
+      <button class="btn-pri" data-rippllino="true" data-bs-bt>A Rippllino button</button>
+      <button class="btn-sec" data-rippllino="true">A Rippllino button</button>
+      <button class="btn-suc" data-rippllino="true">A Rippllino button</button>
+      <button class="btn-danger" data-rippllino="true">A Rippllino button</button>
+    </div>
+
+    <section class="buttons" data-bootstrap-buttons>
+      <button class="btn-primary" data-rippllino="true">A Rippllino button</button>
+      <button class="btn-secondary" data-rippllino="true">A Rippllino button</button>
+      <button class="btn-success" data-rippllino="true">A Rippllino button</button>
+      <button class="btn-warning" data-rippllino="true">A Rippllino button</button>
+      <button class="btn-danger" data-rippllino="true">A Rippllino button</button>
+      <button class="btn-light" data-rippllino="true">A Rippllino button</button>
+      <button class="btn-dark" data-rippllino="true">A Rippllino button</button>
+      <button class="btn-link" data-rippllino="true">A Rippllino button</button>
+    </section>
+  </main>
+
+  <script src="/rippllino.js"></script>
+
+  <script>
+    let rippllino = new Rippllino({
+      rippllinoAnimateOn: 'mousedown',
+      animationDuration: 0.75
+    });
+
+    /* document.addEventListener('DOMContentLoaded', () => {
+      setTimeout(() => {
+        document.getElementById('preloader').setAttribute('style', 'opacity:0;pointer-events:none;')
+      }, 2000)
+    }); */
+  </script>
+</body>
+
+</html>

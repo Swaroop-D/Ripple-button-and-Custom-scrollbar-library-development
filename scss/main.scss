@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+$code-font: 'Fira Code', monospace;
+$bg-dark-1: #222;
+$bg-dark-2: #ffffff25;
+@import 'page_load_animation'; // page load animation
+@import 'button';
+
+// css reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  background-color: $bg-dark-1;
+  color: #fff;
+  overflow-x: hidden;
+  font-family: sans-serif;
+}
+
+body {
+  width: 100vw;
+  padding: 50px 0;
+
+  main {
+    margin: 0 auto;
+    width: 1200px;
+  }
+}
+
+code {
+  font-family: $code-font;
+  background: $bg-dark-2;
+  padding-left: 0.25em;
+  padding-right: 0.25em;
+  border-radius: 0.2em;
+}
+
+note {
+  color: #ffc9bc;
+}
+
+.buttons,
+.normal {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  margin: 0.7rem auto;
+}
+
+p {
+  padding: 1.3em auto;
+  line-height: 1.6em;
+}
