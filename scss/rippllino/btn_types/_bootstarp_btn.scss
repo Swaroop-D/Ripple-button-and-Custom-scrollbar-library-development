@@ -31,7 +31,7 @@ $teal-hov-clr: #20c997;
 
 $default-font: 'Segoe UI', sans-serif;
 
-[data-bootstrap-buttons] .btn {
+[data-bootstrap-buttons] > .btn {
   display: inline-block;
   font-weight: 400;
   color: #ffffff;
@@ -62,7 +62,7 @@ $default-font: 'Segoe UI', sans-serif;
 }
 
 /* default-normal buttons */
-[data-bootstrap-buttons] .btn-primary {
+[data-bootstrap-buttons] > .btn-primary {
   display: inline-block;
   font-weight: 400;
   color: #ffffff;

@@ -1,3 +1,5 @@
+#### This version of the main version has the most number of bugs... Please Do not use it for a production build!!!
+
 # Rippllino • A full basket of highly creative buttons_development
 
 Are you tired of styling buttons and handling css errors for them? Then, we've got you're back.. A simple solution for creative button is here😍
