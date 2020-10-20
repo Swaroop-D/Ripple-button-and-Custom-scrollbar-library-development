@@ -56,7 +56,7 @@ $default-font: 'Segoe UI', sans-serif;
 
     &:focus,
     &:active {
-      color: #fff;
+      // color: #fff;
       border-color: #0062cc;
       box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
     }
@@ -197,6 +197,144 @@ $default-font: 'Segoe UI', sans-serif;
     &:active {
       color: $primary;
       text-decoration: underline;
+    }
+  }
+
+  /* outline-secondary buttons */
+  .btn-primary-outline {
+    @extend .btn;
+    background: transparent;
+    border-color: $primary;
+    color: $primary;
+
+    &:hover {
+      color: #fff;
+      background-color: $primary-hov-clr;
+    }
+
+    &:focus,
+    &:active {
+      border-color: #0062cc;
+      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+    }
+  }
+  .btn-secondary-outline {
+    @extend .btn;
+    background: transparent;
+    border-color: $secondary;
+    color: $secondary;
+
+    &:hover {
+      color: #fff;
+      background-color: $secondary-hov-clr;
+    }
+
+    &:focus,
+    &:active {
+      border-color: #5a6268;
+      box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5);
+    }
+  }
+  .btn-success-outline {
+    @extend .btn;
+    background: transparent;
+    border-color: $success;
+    color: $success;
+
+    &:hover {
+      color: #fff;
+      background-color: $success-hov-clr;
+    }
+
+    &:focus,
+    &:active {
+      border-color: #1e7e34;
+      box-shadow: 0 0 0 0.2rem rgba(72, 180, 97, 0.5);
+    }
+  }
+  .btn-danger-outline {
+    @extend .btn;
+    background: transparent;
+    border-color: $danger;
+    color: $danger;
+
+    &:hover {
+      color: #fff;
+      background-color: $danger-hov-clr;
+    }
+
+    &:focus,
+    &:active {
+      border-color: #c82333;
+      box-shadow: 0 0 0 0.2rem rgba(225, 83, 97, 0.5);
+    }
+  }
+  .btn-warning-outline {
+    @extend .btn;
+    background: transparent;
+    border-color: $warning;
+    color: $warning;
+
+    &:hover {
+      color: #fff;
+      background-color: $warning-hov-clr;
+    }
+
+    &:focus,
+    &:active {
+      border-color: #e0a800;
+      box-shadow: 0 0 0 0.2rem rgba(222, 170, 12, 0.5);
+    }
+  }
+  .btn-info-outline {
+    @extend .btn;
+    background: transparent;
+    border-color: $info;
+    color: $info;
+
+    &:hover {
+      color: #fff;
+      background-color: $info-hov-clr;
+    }
+
+    &:focus,
+    &:active {
+      border-color: #117a8b;
+      box-shadow: 0 0 0 0.2rem rgba(58, 176, 195, 0.5);
+    }
+  }
+  .btn-light-outline {
+    @extend .btn;
+    background: transparent;
+    border-color: $light;
+    color: $light;
+
+    &:hover {
+      color: #333333;
+      background-color: $light-hov-clr;
+    }
+
+    &:focus,
+    &:active {
+      border-color: #e2e6ea;
+      box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
+    }
+  }
+  .btn-dark-outline {
+    @extend .btn;
+    background: transparent;
+    border-color: $dark;
+    color: $dark;
+
+    &:hover {
+      color: #fff;
+      background-color: $dark-hov-clr;
+    }
+
+    &:focus,
+    &:active {
+      border-color: #23272b;
+      box-shadow: 0 0 0 0.2rem rgba(82, 88, 93, 0.5);
     }
   }
 }
