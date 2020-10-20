@@ -1,10 +1,10 @@
 /* Default @btn Colors */
 $primary: #007bff;
 $primary-hov-clr: #0069d9;
-$gray: #6c757d;
-$gray-hov-clr: #6c757d;
-$green: #28a745;
-$green-hov-clr: #218838;
+$secondary: #6c757d;
+$secondary-hov-clr: #5a6268;
+$success: #28a745;
+$success-hov-clr: #218838;
 $danger: #dc3545;
 $danger-hov-clr: #c82333;
 $warning: #ffc107;
@@ -13,8 +13,8 @@ $info: #17a2b8;
 $info-hov-clr: #138496;
 $light: #f8f9fa;
 $light-hov-clr: #e2e6ea;
-$gray-dark: #343a40;
-$gray-dark-hov-clr: #23272b;
+$dark: #343a40;
+$dark-hov-clr: #23272b;
 
 $indigo: #6610f2;
 $indigo-hov-clr: #6610f2;
@@ -31,63 +31,172 @@ $teal-hov-clr: #20c997;
 
 $default-font: 'Segoe UI', sans-serif;
 
-[data-bootstrap-buttons] > .btn {
-  display: inline-block;
-  font-weight: 400;
-  color: #ffffff;
-  font-family: $default-font;
-  text-align: center;
-  vertical-align: middle;
-  user-select: none;
-  background-color: transparent;
-  border: 1px solid transparent;
-  padding: 0.375rem 0.75rem;
-  font-size: 1rem;
-  background: $primary;
-  line-height: 1.5;
-  border-radius: 0.25rem;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+[data-bootstrap-buttons] {
+  .btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #ffffff;
+    font-family: $default-font;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    background: $primary;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+      border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 
-  &:hover {
-    background-color: $primary-hov-clr;
+    &:hover {
+      background-color: $primary-hov-clr;
+    }
+
+    &:focus,
+    &:active {
+      color: #fff;
+      border-color: #0062cc;
+      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+    }
   }
 
-  &:focus,
-  &:active {
-    color: #fff;
-    border-color: #0062cc;
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+  /* default-normal buttons */
+  .btn-primary {
+    @extend .btn;
+
+    &:hover {
+      background-color: $primary-hov-clr;
+    }
+
+    &:focus,
+    &:active {
+      color: #fff;
+      border-color: #0062cc;
+      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+    }
   }
-}
+  .btn-secondary {
+    @extend .btn;
+    background-color: $secondary;
 
-/* default-normal buttons */
-[data-bootstrap-buttons] > .btn-primary {
-  display: inline-block;
-  font-weight: 400;
-  color: #ffffff;
-  font-family: $default-font;
-  text-align: center;
-  vertical-align: middle;
-  user-select: none;
-  background-color: transparent;
-  border: 1px solid transparent;
-  padding: 0.375rem 0.75rem;
-  font-size: 1rem;
-  background: $primary;
-  line-height: 1.5;
-  border-radius: 0.25rem;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    &:hover {
+      background-color: $secondary-hov-clr;
+    }
 
-  &:hover {
-    background-color: $primary-hov-clr;
+    &:focus,
+    &:active {
+      color: #fff;
+      border-color: #5a6268;
+      box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5);
+    }
   }
+  .btn-success {
+    @extend .btn;
+    background-color: $success;
 
-  &:focus,
-  &:active {
-    color: #fff;
-    border-color: #0062cc;
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+    &:hover {
+      background-color: $success-hov-clr;
+    }
+
+    &:focus,
+    &:active {
+      color: #fff;
+      border-color: #1e7e34;
+      box-shadow: 0 0 0 0.2rem rgba(72, 180, 97, 0.5);
+    }
+  }
+  .btn-danger {
+    @extend .btn;
+    background-color: $danger;
+
+    &:hover {
+      background-color: $danger-hov-clr;
+    }
+
+    &:focus,
+    &:active {
+      color: #fff;
+      border-color: #c82333;
+      box-shadow: 0 0 0 0.2rem rgba(225, 83, 97, 0.5);
+    }
+  }
+  .btn-warning {
+    @extend .btn;
+    background-color: $warning;
+
+    &:hover {
+      background-color: $warning-hov-clr;
+    }
+
+    &:focus,
+    &:active {
+      color: #fff;
+      border-color: #e0a800;
+      box-shadow: 0 0 0 0.2rem rgba(222, 170, 12, 0.5);
+    }
+  }
+  .btn-info {
+    @extend .btn;
+    background-color: $info;
+
+    &:hover {
+      background-color: $info-hov-clr;
+    }
+
+    &:focus,
+    &:active {
+      color: #fff;
+      border-color: #117a8b;
+      box-shadow: 0 0 0 0.2rem rgba(58, 176, 195, 0.5);
+    }
+  }
+  .btn-light {
+    @extend .btn;
+    background-color: $light;
+    color: #333333;
+
+    &:hover {
+      background-color: $light-hov-clr;
+      color: #333333;
+    }
+
+    &:focus,
+    &:active {
+      color: #333333;
+      border-color: #e2e6ea;
+      box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
+    }
+  }
+  .btn-dark {
+    @extend .btn;
+    background-color: $dark;
+
+    &:hover {
+      background-color: $dark-hov-clr;
+    }
+
+    &:focus,
+    &:active {
+      border-color: #23272b;
+      box-shadow: 0 0 0 0.2rem rgba(82, 88, 93, 0.5);
+    }
+  }
+  .btn-link {
+    @extend .btn;
+    background-color: transparent;
+    color: $primary;
+
+    &:hover {
+      background-color: transparent;
+      color: $primary-hov-clr;
+    }
+
+    &:focus,
+    &:active {
+      color: $primary;
+      text-decoration: underline;
+    }
   }
 }
