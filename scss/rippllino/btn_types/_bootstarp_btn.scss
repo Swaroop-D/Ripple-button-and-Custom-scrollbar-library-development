@@ -74,7 +74,7 @@ $default-font: 'Segoe UI', sans-serif;
     &:active {
       color: #fff;
       border-color: #0062cc;
-      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+      box-shadow: 0 0 0 0.2rem rgba($color: $primary, $alpha: 0.5);
     }
   }
   .btn-secondary {
@@ -89,7 +89,7 @@ $default-font: 'Segoe UI', sans-serif;
     &:active {
       color: #fff;
       border-color: #5a6268;
-      box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5);
+      box-shadow: 0 0 0 0.2rem rgba($color: $secondary, $alpha: 0.5);
     }
   }
   .btn-success {
@@ -104,7 +104,7 @@ $default-font: 'Segoe UI', sans-serif;
     &:active {
       color: #fff;
       border-color: #1e7e34;
-      box-shadow: 0 0 0 0.2rem rgba(72, 180, 97, 0.5);
+      box-shadow: 0 0 0 0.2rem rgba($color: $success, $alpha: 0.5);
     }
   }
   .btn-danger {
@@ -119,7 +119,7 @@ $default-font: 'Segoe UI', sans-serif;
     &:active {
       color: #fff;
       border-color: #c82333;
-      box-shadow: 0 0 0 0.2rem rgba(225, 83, 97, 0.5);
+      box-shadow: 0 0 0 0.2rem rgba($color: $danger, $alpha: 0.5);
     }
   }
   .btn-warning {
@@ -134,7 +134,7 @@ $default-font: 'Segoe UI', sans-serif;
     &:active {
       color: #fff;
       border-color: #e0a800;
-      box-shadow: 0 0 0 0.2rem rgba(222, 170, 12, 0.5);
+      box-shadow: 0 0 0 0.2rem rgba($color: $warning, $alpha: 0.5);
     }
   }
   .btn-info {
@@ -149,7 +149,7 @@ $default-font: 'Segoe UI', sans-serif;
     &:active {
       color: #fff;
       border-color: #117a8b;
-      box-shadow: 0 0 0 0.2rem rgba(58, 176, 195, 0.5);
+      box-shadow: 0 0 0 0.2rem rgba($color: $info, $alpha: 0.5);
     }
   }
   .btn-light {
@@ -166,7 +166,7 @@ $default-font: 'Segoe UI', sans-serif;
     &:active {
       color: #333333;
       border-color: #e2e6ea;
-      box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
+      box-shadow: 0 0 0 0.2rem rgba($color: $light, $alpha: 0.5);
     }
   }
   .btn-dark {
@@ -180,7 +180,7 @@ $default-font: 'Segoe UI', sans-serif;
     &:focus,
     &:active {
       border-color: #23272b;
-      box-shadow: 0 0 0 0.2rem rgba(82, 88, 93, 0.5);
+      box-shadow: 0 0 0 0.2rem rgba($color: $dark, $alpha: 0.5);
     }
   }
   .btn-link {
@@ -215,7 +215,7 @@ $default-font: 'Segoe UI', sans-serif;
     &:focus,
     &:active {
       border-color: #0062cc;
-      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+      box-shadow: 0 0 0 0.2rem rgba($color: $primary, $alpha: 0.5);
     }
   }
   .btn-secondary-outline {
@@ -232,7 +232,7 @@ $default-font: 'Segoe UI', sans-serif;
     &:focus,
     &:active {
       border-color: #5a6268;
-      box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5);
+      box-shadow: 0 0 0 0.2rem rgba($color: $secondary, $alpha: 0.5);
     }
   }
   .btn-success-outline {
@@ -249,7 +249,7 @@ $default-font: 'Segoe UI', sans-serif;
     &:focus,
     &:active {
       border-color: #1e7e34;
-      box-shadow: 0 0 0 0.2rem rgba(72, 180, 97, 0.5);
+      box-shadow: 0 0 0 0.2rem rgba($color: $success, $alpha: 0.5);
     }
   }
   .btn-danger-outline {
@@ -266,7 +266,7 @@ $default-font: 'Segoe UI', sans-serif;
     &:focus,
     &:active {
       border-color: #c82333;
-      box-shadow: 0 0 0 0.2rem rgba(225, 83, 97, 0.5);
+      box-shadow: 0 0 0 0.2rem rgba($color: $danger, $alpha: 0.5);
     }
   }
   .btn-warning-outline {
@@ -283,7 +283,7 @@ $default-font: 'Segoe UI', sans-serif;
     &:focus,
     &:active {
       border-color: #e0a800;
-      box-shadow: 0 0 0 0.2rem rgba(222, 170, 12, 0.5);
+      box-shadow: 0 0 0 0.2rem rgba($color: $warning, $alpha: 0.5);
     }
   }
   .btn-info-outline {
@@ -300,7 +300,7 @@ $default-font: 'Segoe UI', sans-serif;
     &:focus,
     &:active {
       border-color: #117a8b;
-      box-shadow: 0 0 0 0.2rem rgba(58, 176, 195, 0.5);
+      box-shadow: 0 0 0 0.2rem rgba($color: $info, $alpha: 0.5);
     }
   }
   .btn-light-outline {
@@ -317,7 +317,7 @@ $default-font: 'Segoe UI', sans-serif;
     &:focus,
     &:active {
       border-color: #e2e6ea;
-      box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
+      box-shadow: 0 0 0 0.2rem rgba($color: $light, $alpha: 0.5);
     }
   }
   .btn-dark-outline {
@@ -334,7 +334,7 @@ $default-font: 'Segoe UI', sans-serif;
     &:focus,
     &:active {
       border-color: #23272b;
-      box-shadow: 0 0 0 0.2rem rgba(82, 88, 93, 0.5);
+      box-shadow: 0 0 0 0.2rem rgba($color: $dark, $alpha: 0.5);
     }
   }
 }
