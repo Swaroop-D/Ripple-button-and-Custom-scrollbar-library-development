@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Rippllino • The basket of creative button</title>
-  <link rel="stylesheet" href="./css/main.css">
-  <link rel="stylesheet" href="./css/rippllino.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/rippllino.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -42,13 +42,22 @@
       <button class="btn-dark-outline" data-rippllino="true">Dark</button>
       <button class="btn-link" data-rippllino="true">Link</button>
     </section>
+    <h1>Bulma Buttons in Rippllino v0.2.5@alpha</h1>
+    <section class="buttons" data-bulma-buttons>
+      <button class="button-white" data-rippllino="true">White</button>
+      <button class="button-light" data-rippllino="true">Light</button>
+      <button class="button-dark" data-rippllino="true">Dark</button>
+      <button class="button-black" data-rippllino="true">Black</button>
+      <button class="button-text" data-rippllino="true">Text</button>
+    </section>
   </main>
 
-  <script src="./rippllino.js"></script>
+  <script src="/rippllino.js"></script>
 
   <script>
     let rippllino = new Rippllino({
       rippllinoAnimateOn: 'mousedown',
+      rplThemeColor: '#e5e5e5',
       animationDuration: 1
     });
   </script>
