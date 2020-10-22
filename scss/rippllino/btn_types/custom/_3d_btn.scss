@@ -39,9 +39,10 @@ $box-shadow-hov: 0px 2px 0.75em 1px
     color: #fff;
     font-family: $default-font;
     font-size: 1rem;
-    border-bottom: 4px solid darken($color: $primary, $amount: 15%);
+    border-bottom: 4px solid darken($color: $primary, $amount: 17.5%);
     box-shadow: $box-shadow;
-    transition: background 150ms ease-in-out, box-shadow 150ms ease-in-out;
+    transition: background 150ms ease-in-out, box-shadow 150ms ease-in-out,
+      color 150ms ease-in-out;
 
     &:hover {
       background-color: $primary-hov-clr;
@@ -52,6 +53,188 @@ $box-shadow-hov: 0px 2px 0.75em 1px
       box-shadow: $box-shadow-hov;
     }
     &:focus {
+      box-shadow: $box-shadow-hov;
+    }
+  }
+  .btn-secondary {
+    @extend .btn;
+
+    background-color: $secondary;
+    border-bottom: 4px solid darken($color: $secondary, $amount: 17.5%);
+    box-shadow: $box-shadow;
+
+    &:hover {
+      background-color: $secondary-hov-clr;
+      box-shadow: $box-shadow-hov;
+    }
+    &:active {
+      background-color: $secondary-hov-clr;
+      box-shadow: $box-shadow-hov;
+    }
+    &:focus {
+      box-shadow: $box-shadow-hov;
+    }
+  }
+  .btn-success {
+    @extend .btn;
+
+    background-color: $success;
+    border-bottom: 4px solid darken($color: $success, $amount: 17.5%);
+    box-shadow: $box-shadow;
+
+    &:hover {
+      background-color: $success-hov-clr;
+      box-shadow: $box-shadow-hov;
+    }
+    &:active {
+      background-color: $success-hov-clr;
+      box-shadow: $box-shadow-hov;
+    }
+    &:focus {
+      box-shadow: $box-shadow-hov;
+    }
+  }
+  .btn-danger {
+    @extend .btn;
+
+    background-color: $danger;
+    border-bottom: 4px solid darken($color: $danger, $amount: 17.5%);
+    box-shadow: $box-shadow;
+
+    &:hover {
+      background-color: $danger-hov-clr;
+      box-shadow: $box-shadow-hov;
+    }
+    &:active {
+      background-color: $danger-hov-clr;
+      box-shadow: $box-shadow-hov;
+    }
+    &:focus {
+      box-shadow: $box-shadow-hov;
+    }
+  }
+  .btn-warning {
+    @extend .btn;
+
+    background-color: $warning;
+    border-bottom: 4px solid darken($color: $warning, $amount: 17.5%);
+    box-shadow: $box-shadow;
+    color: #333333;
+
+    &:hover {
+      background-color: $warning-hov-clr;
+      box-shadow: $box-shadow-hov;
+    }
+    &:active {
+      background-color: $warning-hov-clr;
+      box-shadow: $box-shadow-hov;
+    }
+    &:focus {
+      box-shadow: $box-shadow-hov;
+    }
+  }
+  .btn-info {
+    @extend .btn;
+
+    background-color: $info;
+    border-bottom: 4px solid darken($color: $info, $amount: 17.5%);
+    box-shadow: $box-shadow;
+
+    &:hover {
+      background-color: $info-hov-clr;
+      box-shadow: $box-shadow-hov;
+    }
+    &:active {
+      background-color: $info-hov-clr;
+      box-shadow: $box-shadow-hov;
+    }
+    &:focus {
+      box-shadow: $box-shadow-hov;
+    }
+  }
+  .btn-light {
+    @extend .btn;
+
+    background-color: $light;
+    border-bottom: 4px solid darken($color: $light, $amount: 17.5%);
+    box-shadow: $box-shadow;
+    color: #333333;
+
+    &:hover {
+      background-color: $light-hov-clr;
+      box-shadow: $box-shadow-hov;
+    }
+    &:active {
+      background-color: $light-hov-clr;
+      box-shadow: $box-shadow-hov;
+    }
+    &:focus {
+      box-shadow: $box-shadow-hov;
+    }
+  }
+  .btn-dark {
+    @extend .btn;
+
+    background-color: $dark;
+    border-bottom: 4px solid darken($color: $dark, $amount: 17.5%);
+    box-shadow: $box-shadow;
+    color: #333333;
+
+    &:hover {
+      background-color: $dark-hov-clr;
+      box-shadow: $box-shadow-hov;
+    }
+    &:active {
+      background-color: $dark-hov-clr;
+      box-shadow: $box-shadow-hov;
+    }
+    &:focus {
+      box-shadow: $box-shadow-hov;
+    }
+  }
+  .btn-dark {
+    @extend .btn;
+
+    background-color: $dark;
+    border-bottom: 4px solid darken($color: $dark, $amount: 17.5%);
+    box-shadow: $box-shadow;
+    color: #fff;
+
+    &:hover {
+      background-color: $dark-hov-clr;
+      box-shadow: $box-shadow-hov;
+    }
+    &:active {
+      background-color: $dark-hov-clr;
+      box-shadow: $box-shadow-hov;
+    }
+    &:focus {
+      box-shadow: $box-shadow-hov;
+    }
+  }
+  .btn-link {
+    @extend .btn;
+
+    color: $primary;
+    border-bottom: 4px solid darken($color: $primary, $amount: 17.5%);
+    box-shadow: $box-shadow;
+    background: transparent;
+
+    &:hover {
+      text-decoration: underline;
+      background: transparent;
+      color: $primary-hov-clr;
+      box-shadow: $box-shadow-hov;
+    }
+    &:active {
+      text-decoration: underline;
+      background: transparent;
+      color: $primary-hov-clr;
+      box-shadow: $box-shadow-hov;
+    }
+    &:focus {
+      text-decoration: underline;
+      background: transparent;
       box-shadow: $box-shadow-hov;
     }
   }
