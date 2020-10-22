@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
 $code-font: 'Fira Code', monospace;
-$bg-dark-1: #fff;
+$bg-dark-1: #222;
 $bg-dark-2: #ffffff25;
 @import 'page_load_animation'; // page load animation
 
@@ -12,7 +12,7 @@ $bg-dark-2: #ffffff25;
 }
 html {
   background-color: $bg-dark-1;
-  color: #222;
+  color: #fff;
   overflow-x: hidden;
   font-family: sans-serif;
 }
