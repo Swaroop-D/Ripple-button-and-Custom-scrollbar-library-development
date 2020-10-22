@@ -1,0 +1,58 @@
+$primary: #007bff;
+$primary-hov-clr: #0069d9;
+$secondary: #6c757d;
+$secondary-hov-clr: #5a6268;
+$success: #28a745;
+$success-hov-clr: #218838;
+$danger: #dc3545;
+$danger-hov-clr: #c82333;
+$warning: #ffc107;
+$warning-hov-clr: #e0a800;
+$info: #17a2b8;
+$info-hov-clr: #138496;
+$light: #f8f9fa;
+$light-hov-clr: #e2e6ea;
+$dark: #343a40;
+$dark-hov-clr: #23272b;
+
+/* tools */
+$box-shadow: 0px 2px 0.45em 1px
+  rgba(
+    $color: #000000,
+    $alpha: 0.3,
+  );
+$box-shadow-hov: 0px 2px 0.75em 1px
+  rgba(
+    $color: #000000,
+    $alpha: 0.4,
+  );
+
+[data-3d-button] {
+  .btn,
+  .btn-primary,
+  button {
+    @extend .btn;
+
+    padding: var(--custom-default-padding-unit);
+    border: none;
+    background-color: $primary;
+    color: #fff;
+    font-family: $default-font;
+    font-size: 1rem;
+    border-bottom: 4px solid darken($color: $primary, $amount: 15%);
+    box-shadow: $box-shadow;
+    transition: background 150ms ease-in-out, box-shadow 150ms ease-in-out;
+
+    &:hover {
+      background-color: $primary-hov-clr;
+      box-shadow: $box-shadow-hov;
+    }
+    &:active {
+      background-color: $primary-hov-clr;
+      box-shadow: $box-shadow-hov;
+    }
+    &:focus {
+      box-shadow: $box-shadow-hov;
+    }
+  }
+}
