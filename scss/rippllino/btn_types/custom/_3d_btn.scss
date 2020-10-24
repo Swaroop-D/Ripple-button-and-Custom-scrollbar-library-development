@@ -1,0 +1,35 @@
+--root {
+  @extend .btn;
+
+  padding: 0.5rem 0.95rem;
+  border: none;
+  color: #fff;
+  background: transparent;
+
+  &::before {
+    content: '';
+    display: block;
+    background: $primary-gradient;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    height: 200%;
+    width: 200%;
+    position: absolute;
+    background-position: center;
+    transition: transform 150% ease-out;
+  }
+}
+
+[data-3d-buttons] .btn,
+[data-3d-buttons] .btn-primary,
+[data-3d-buttons] .btn-secondary,
+[data-3d-buttons] .btn-success,
+[data-3d-buttons] .btn-warning,
+[data-3d-buttons] .btn-danger,
+[data-3d-buttons] .btn-info,
+[data-3d-buttons] .btn-light,
+[data-3d-buttons] .btn-dark,
+[data-3d-buttons] .btn-link {
+  @extend --root;
+}

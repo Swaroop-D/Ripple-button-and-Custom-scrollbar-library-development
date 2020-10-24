@@ -78,11 +78,123 @@ $dark: #343a40;
 $dark-sec: #23272b;
 
 // gradient-buttons
-$primary-gradient: linear-gradient(65deg, $primary 25%, $primary-sec 75%);
-$secondary-gradient: linear-gradient(65deg, $secondary 25%, $secondary-sec 75%);
-$success-gradient: linear-gradient(65deg, $success 25%, $success-sec 75%);
-$danger-gradient: linear-gradient(65deg, $danger 25%, $danger-sec 75%);
-$warning-gradient: linear-gradient(65deg, $warning 25%, $warning-sec 75%);
-$info-gradient: linear-gradient(65deg, $info 25%, $info-sec 75%);
-$light-gradient: linear-gradient(65deg, $light 25%, $light-sec 75%);
-$dark-gradient: linear-gradient(65deg, $dark 25%, $dark-sec 75%);
+$primary-gradient: linear-gradient(135deg, $primary 25%, $primary-sec 75%);
+$secondary-gradient: linear-gradient(
+  135deg,
+  $secondary 25%,
+  $secondary-sec 75%
+);
+$success-gradient: linear-gradient(135deg, $success 25%, $success-sec 75%);
+$danger-gradient: linear-gradient(135deg, $danger 25%, $danger-sec 75%);
+$warning-gradient: linear-gradient(135deg, $warning 25%, $warning-sec 75%);
+$info-gradient: linear-gradient(135deg, $info 25%, $info-sec 75%);
+$light-gradient: linear-gradient(135deg, $light 25%, $light-sec 75%);
+$dark-gradient: linear-gradient(135deg, $dark 25%, $dark-sec 75%);
+
+/*
+  * 3d-buttons
+  ! 3d-buttons follow gradient-buttond as well
+*/
+$massive-primary-border-bottom: 6px solid
+  darken(
+    $color: $primary,
+    $amount: 20%,
+  );
+$massive-secondary-border-bottom: 6px solid
+  darken(
+    $color: $secondary,
+    $amount: 20%,
+  );
+$massive-success-border-bottom: 6px solid
+  darken(
+    $color: $success,
+    $amount: 20%,
+  );
+$massive-danger-border-bottom: 6px solid
+  darken(
+    $color: $danger,
+    $amount: 20%,
+  );
+$massive-warning-border-bottom: 6px solid
+  darken(
+    $color: $warning,
+    $amount: 20%,
+  );
+$massive-info-border-bottom: 6px solid
+  darken(
+    $color: $info,
+    $amount: 20%,
+  );
+$massive-info-border-bottom: 6px solid
+  darken(
+    $color: $info,
+    $amount: 20%,
+  );
+$massive-light-border-bottom: 6px solid
+  darken(
+    $color: $info,
+    $amount: 20%,
+  );
+$massive-dark-border-bottom: 6px solid
+  darken(
+    $color: $info,
+    $amount: 20%,
+  );
+
+$small-primary-border-bottom: 4px solid
+  darken(
+    $color: $primary,
+    $amount: 20%,
+  );
+$small-secondary-border-bottom: 4px solid
+  darken(
+    $color: $secondary,
+    $amount: 20%,
+  );
+$small-success-border-bottom: 4px solid
+  darken(
+    $color: $success,
+    $amount: 20%,
+  );
+$small-danger-border-bottom: 4px solid
+  darken(
+    $color: $danger,
+    $amount: 20%,
+  );
+$small-warning-border-bottom: 4px solid
+  darken(
+    $color: $warning,
+    $amount: 20%,
+  );
+$small-info-border-bottom: 4px solid
+  darken(
+    $color: $info,
+    $amount: 20%,
+  );
+$small-info-border-bottom: 4px solid
+  darken(
+    $color: $info,
+    $amount: 20%,
+  );
+$small-light-border-bottom: 4px solid
+  darken(
+    $color: $info,
+    $amount: 20%,
+  );
+$small-dark-border-bottom: 4px solid
+  darken(
+    $color: $info,
+    $amount: 20%,
+  );
+
+// shadows
+$box-shadow: 0px 1px 0.65em 1px
+  rgba(
+    $color: #111111,
+    $alpha: 0.3,
+  );
+$box-shadow-hov: 0px 2px 0.75em 2px
+  rgba(
+    $color: #111111,
+    $alpha: 0.4,
+  );
