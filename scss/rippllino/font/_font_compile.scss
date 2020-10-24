@@ -1,0 +1,78 @@
+// ** Arial Font
+@font-face {
+  // font-family name
+  font-family: 'Arial', sans-serif;
+
+  // sources for fonts
+  src: url(./arial/arial.ttf);
+  src: url(./arial/arialbd.ttf);
+  src: url(./arial/arialbi.ttf);
+  src: url(./arial/ariali.ttf);
+  src: url(./arial/ARIALN.TTF);
+  src: url(./arial/ARIALNI.TTF);
+  src: url(./arial/ARIALNB.TTF);
+  src: url(./arial/ARIALNBI.TTF);
+
+  // available font-weight
+  font-weight: 100;
+  font-weight: 200;
+  font-weight: 300;
+  font-weight: 400;
+  font-weight: 500;
+  font-weight: 600;
+  font-weight: 700;
+  font-weight: 800;
+  font-weight: 900;
+}
+
+// ** Calibri Font
+@font-face {
+  // font-family name
+  font-family: 'Calibri', sans-serif;
+
+  // sources for fonts
+  src: url(./calibri/calibri.ttf);
+  src: url(./calibri/calibrib.ttf);
+  src: url(./calibri/calibrii.ttf);
+  src: url(./calibri/calibril.ttf);
+  src: url(./calibri/calibrili.ttf);
+  src: url(./calibri/calibriz.ttf);
+
+  // available font-weight
+  font-weight: 300;
+  font-weight: 400;
+  font-weight: 500;
+  font-weight: 600;
+  font-weight: 700;
+}
+
+// ** Segoe UI Font
+@font-face {
+  // font-family name
+  font-family: 'Segoe UI', sans-serif;
+
+  // sources for fonts
+  src: url(./segoeui/segoeui.ttf);
+  src: url(./segoeui/segoeuib.ttf);
+  src: url(./segoeui/segoeuii.ttf);
+  src: url(./segoeui/segoeuil.ttf);
+  src: url(./segoeui/segoeuisl.ttf);
+  src: url(./segoeui/segoeuiz.ttf);
+  src: url(./segoeui/seguibl.ttf);
+  src: url(./segoeui/seguibli.ttf);
+  src: url(./segoeui/seguili.ttf);
+  src: url(./segoeui/seguisb.ttf);
+  src: url(./segoeui/seguisbi.ttf);
+  src: url(./segoeui/seguisli.ttf);
+
+  // available font-weight
+  font-weight: 100;
+  font-weight: 200;
+  font-weight: 300;
+  font-weight: 400;
+  font-weight: 500;
+  font-weight: 600;
+  font-weight: 700;
+  font-weight: 800;
+  font-weight: 900;
+}

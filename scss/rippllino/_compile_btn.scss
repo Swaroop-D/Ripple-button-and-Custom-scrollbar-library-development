@@ -1,3 +1,8 @@
+// ! fonts
+@import './font/font_compile';
+
+// ! buttons
+@import './variables';
 @import './btn_types/bootstarp_btn';
 @import './default';
 @import './btn_types/custom/3d_btn';

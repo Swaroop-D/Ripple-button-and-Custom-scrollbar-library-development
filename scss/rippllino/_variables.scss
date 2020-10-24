@@ -1,0 +1,88 @@
+// ** font-families
+$segoe-ui: 'Arial', sans-serif;
+$segoe-ui: 'Calibri', sans-serif;
+$segoe-ui: 'Segoe UI', sans-serif;
+
+// ** font-weight
+$lightest: 100;
+$lighter: 200;
+$light: 300;
+$normal: 400;
+$semi-bold: 500;
+$bold: 600;
+$boder: 700;
+$extra-bold: 800;
+$ultra-bold: 900;
+
+// ** Colors
+
+// ! for-bootstrap
+// normal-else color
+$blue: #007bff;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #e83e8c;
+$red: #dc3545;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green: #28a745;
+$teal: #20c997;
+$cyan: #17a2b8;
+$white: #fff;
+$gray: #6c757d;
+$gray-dark: #343a40;
+$primary: #007bff;
+$secondary: #6c757d;
+$success: #28a745;
+$info: #17a2b8;
+$warning: #ffc107;
+$danger: #dc3545;
+$light: #f8f9fa;
+$dark: #343a40;
+
+// butoon-color
+$primary: #007bff;
+$primary-hov-clr: #0069d9;
+$secondary: #6c757d;
+$secondary-hov-clr: #5a6268;
+$success: #28a745;
+$success-hov-clr: #218838;
+$danger: #dc3545;
+$danger-hov-clr: #c82333;
+$warning: #ffc107;
+$warning-hov-clr: #e0a800;
+$info: #17a2b8;
+$info-hov-clr: #138496;
+$light: #f8f9fa;
+$light-hov-clr: #e2e6ea;
+$dark: #343a40;
+$dark-hov-clr: #23272b;
+
+// ! custom properties
+// buttons
+$primary: #007bff;
+$primary-sec: #3e9cff;
+$secondary: #6c757d;
+$secondary-sec: #7d8286;
+$success: #28a745;
+$success-sec: #218838;
+$danger: #dc3545;
+$danger-sec: #c82333;
+$warning: #ffc107;
+$warning-sec: #e0a800;
+$info: #17a2b8;
+$info-sec: #138496;
+$light: #f8f9fa;
+$light-sec: #e2e6ea;
+$dark: #343a40;
+$dark-sec: #23272b;
+
+// gradient-buttons
+$primary-gradient: linear-gradient(65deg, $primary 25%, $primary-sec 75%);
+$secondary-gradient: linear-gradient(65deg, $secondary 25%, $secondary-sec 75%);
+$success-gradient: linear-gradient(65deg, $success 25%, $success-sec 75%);
+$danger-gradient: linear-gradient(65deg, $danger 25%, $danger-sec 75%);
+$warning-gradient: linear-gradient(65deg, $warning 25%, $warning-sec 75%);
+$info-gradient: linear-gradient(65deg, $info 25%, $info-sec 75%);
+$light-gradient: linear-gradient(65deg, $light 25%, $light-sec 75%);
+$dark-gradient: linear-gradient(65deg, $dark 25%, $dark-sec 75%);

@@ -4,6 +4,8 @@
 *.sass.map
 *.scss.map
 
+/rippllino_js_only.js
+
 # vs code
 .settings/
 .vscode/
