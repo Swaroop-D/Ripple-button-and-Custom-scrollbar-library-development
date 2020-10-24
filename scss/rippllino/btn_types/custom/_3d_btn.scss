@@ -1,8 +1,7 @@
-$primary: #007bff;
-$primary-hov-clr: #0069d9;
+$primary: linear-gradient(110deg, #166ab8 10%, #5db1ff 80%);
 $secondary: #6c757d;
 $secondary-hov-clr: #5a6268;
-$success: #28a745;
+$success: linear-gradient(-110deg, #4ad49f 10%, #0a8340 80%);
 $success-hov-clr: #218838;
 $danger: #dc3545;
 $danger-hov-clr: #c82333;
@@ -14,6 +13,8 @@ $light: #f8f9fa;
 $light-hov-clr: #e2e6ea;
 $dark: #343a40;
 $dark-hov-clr: #23272b;
+
+$cyan: #60cdd8;
 
 /* tools */
 $box-shadow: 0px 2px 0.45em 1px
@@ -33,10 +34,10 @@ $box-shadow-hov: 0px 2px 0.75em 2px
   button {
     @extend .btn;
 
+    background: transparent;
     font-weight: 600;
     padding: var(--custom-default-padding-unit);
     border: none;
-    background-color: $primary;
     color: #fff;
     font-family: $default-font;
     font-size: 1rem;
@@ -45,12 +46,25 @@ $box-shadow-hov: 0px 2px 0.75em 2px
     transition: background 150ms ease-in-out, box-shadow 150ms ease-in-out,
       color 150ms ease-in-out;
 
-    &:hover {
-      background-color: $primary-hov-clr;
-      box-shadow: $box-shadow-hov;
+    &::before {
+      border-radius: inherit;
+      display: block;
+      width: 200%;
+      height: 200%;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: linear-gradient(135deg, #0078f8 25%, #92caff 75%);
+      transition: all 0.5s;
+      transform: translate(-25%, -25%);
+      z-index: 0;
+    }
+    &:hover::before {
+      transform: scale(5) rotate(10deg);
     }
     &:active {
-      background-color: $primary-hov-clr;
+      background: $primary-hov-clr;
       box-shadow: $box-shadow-hov;
     }
     &:focus {
@@ -60,16 +74,16 @@ $box-shadow-hov: 0px 2px 0.75em 2px
   .btn-secondary {
     @extend .btn;
 
-    background-color: $secondary;
+    background: $secondary;
     border-bottom: 4px solid darken($color: $secondary, $amount: 17.5%);
     box-shadow: $box-shadow;
 
     &:hover {
-      background-color: $secondary-hov-clr;
+      background: $secondary-hov-clr;
       box-shadow: $box-shadow-hov;
     }
     &:active {
-      background-color: $secondary-hov-clr;
+      background: $secondary-hov-clr;
       box-shadow: $box-shadow-hov;
     }
     &:focus {
@@ -79,16 +93,16 @@ $box-shadow-hov: 0px 2px 0.75em 2px
   .btn-success {
     @extend .btn;
 
-    background-color: $success;
+    background: $success;
     border-bottom: 4px solid darken($color: $success, $amount: 17.5%);
     box-shadow: $box-shadow;
 
     &:hover {
-      background-color: $success-hov-clr;
+      background: $success-hov-clr;
       box-shadow: $box-shadow-hov;
     }
     &:active {
-      background-color: $success-hov-clr;
+      background: $success-hov-clr;
       box-shadow: $box-shadow-hov;
     }
     &:focus {
@@ -98,16 +112,16 @@ $box-shadow-hov: 0px 2px 0.75em 2px
   .btn-danger {
     @extend .btn;
 
-    background-color: $danger;
+    background: $danger;
     border-bottom: 4px solid darken($color: $danger, $amount: 17.5%);
     box-shadow: $box-shadow;
 
     &:hover {
-      background-color: $danger-hov-clr;
+      background: $danger-hov-clr;
       box-shadow: $box-shadow-hov;
     }
     &:active {
-      background-color: $danger-hov-clr;
+      background: $danger-hov-clr;
       box-shadow: $box-shadow-hov;
     }
     &:focus {
@@ -117,17 +131,17 @@ $box-shadow-hov: 0px 2px 0.75em 2px
   .btn-warning {
     @extend .btn;
 
-    background-color: $warning;
+    background: $warning;
     border-bottom: 4px solid darken($color: $warning, $amount: 17.5%);
     box-shadow: $box-shadow;
     color: #333333;
 
     &:hover {
-      background-color: $warning-hov-clr;
+      background: $warning-hov-clr;
       box-shadow: $box-shadow-hov;
     }
     &:active {
-      background-color: $warning-hov-clr;
+      background: $warning-hov-clr;
       box-shadow: $box-shadow-hov;
     }
     &:focus {
@@ -137,16 +151,16 @@ $box-shadow-hov: 0px 2px 0.75em 2px
   .btn-info {
     @extend .btn;
 
-    background-color: $info;
+    background: $info;
     border-bottom: 4px solid darken($color: $info, $amount: 17.5%);
     box-shadow: $box-shadow;
 
     &:hover {
-      background-color: $info-hov-clr;
+      background: $info-hov-clr;
       box-shadow: $box-shadow-hov;
     }
     &:active {
-      background-color: $info-hov-clr;
+      background: $info-hov-clr;
       box-shadow: $box-shadow-hov;
     }
     &:focus {
@@ -156,17 +170,17 @@ $box-shadow-hov: 0px 2px 0.75em 2px
   .btn-light {
     @extend .btn;
 
-    background-color: $light;
+    background: $light;
     border-bottom: 4px solid darken($color: $light, $amount: 17.5%);
     box-shadow: $box-shadow;
     color: #333333;
 
     &:hover {
-      background-color: $light-hov-clr;
+      background: $light-hov-clr;
       box-shadow: $box-shadow-hov;
     }
     &:active {
-      background-color: $light-hov-clr;
+      background: $light-hov-clr;
       box-shadow: $box-shadow-hov;
     }
     &:focus {
@@ -176,17 +190,17 @@ $box-shadow-hov: 0px 2px 0.75em 2px
   .btn-dark {
     @extend .btn;
 
-    background-color: $dark;
+    background: $dark;
     border-bottom: 4px solid darken($color: $dark, $amount: 17.5%);
     box-shadow: $box-shadow;
     color: #333333;
 
     &:hover {
-      background-color: $dark-hov-clr;
+      background: $dark-hov-clr;
       box-shadow: $box-shadow-hov;
     }
     &:active {
-      background-color: $dark-hov-clr;
+      background: $dark-hov-clr;
       box-shadow: $box-shadow-hov;
     }
     &:focus {
@@ -196,17 +210,17 @@ $box-shadow-hov: 0px 2px 0.75em 2px
   .btn-dark {
     @extend .btn;
 
-    background-color: $dark;
+    background: $dark;
     border-bottom: 4px solid darken($color: $dark, $amount: 17.5%);
     box-shadow: $box-shadow;
     color: #fff;
 
     &:hover {
-      background-color: $dark-hov-clr;
+      background: $dark-hov-clr;
       box-shadow: $box-shadow-hov;
     }
     &:active {
-      background-color: $dark-hov-clr;
+      background: $dark-hov-clr;
       box-shadow: $box-shadow-hov;
     }
     &:focus {

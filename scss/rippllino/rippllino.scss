@@ -1,6 +1,5 @@
 .btn-pri {
   @extend .btn;
-  background: linear-gradient(-110deg, #5db1ff 10%, #166ab8 80%);
 }
 
 .btn-sec {
@@ -24,7 +23,7 @@
 
   rippllino-bubblle {
     transition: opacity 750ms ease;
-    background: #ffffff75;
+    background: #ffffff;
     position: absolute;
     border-radius: 50%;
     transform: translate(-50%, -50%);
@@ -39,7 +38,7 @@
       opacity: 0;
     }
     20% {
-      opacity: 0.55;
+      opacity: 0.25;
     }
     100% {
       height: 200px;
