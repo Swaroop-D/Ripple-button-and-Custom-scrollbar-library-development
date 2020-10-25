@@ -5,6 +5,8 @@
   border: none;
   color: #fff;
   background: transparent;
+  box-shadow: $box-shadow;
+  transition: $button-transition;
 
   &::before {
     content: '';
@@ -13,11 +15,22 @@
     top: 0;
     right: 0;
     z-index: -1;
-    height: 200%;
-    width: 200%;
+    height: 250%;
+    width: 250%;
     position: absolute;
     background-position: center;
-    transition: transform 150% ease-out;
+    transition: $button-before-transition;
+  }
+  &:hover::before,
+  &:active::before,
+  &:focus::before {
+    transform: scale(4.5) rotate(10deg);
+  }
+  &:hover,
+  &:active,
+  &:focus {
+    box-shadow: $box-shadow-hov;
+    transform: scale(1.05);
   }
 }
 
@@ -32,4 +45,44 @@
 [data-3d-buttons] .btn-dark,
 [data-3d-buttons] .btn-link {
   @extend --root;
+}
+
+[data-3d-buttons] .btn-secondary {
+  &::before {
+    background: $secondary-gradient;
+  }
+}
+[data-3d-buttons] .btn-success {
+  &::before {
+    background: $success-gradient;
+  }
+}
+[data-3d-buttons] .btn-danger {
+  &::before {
+    background: $danger-gradient;
+  }
+}
+[data-3d-buttons] .btn-warning {
+  color: #333;
+
+  &::before {
+    background: $warning-gradient;
+  }
+}
+[data-3d-buttons] .btn-info {
+  &::before {
+    background: $info-gradient;
+  }
+}
+[data-3d-buttons] .btn-light {
+  color: #333;
+
+  &::before {
+    background: $light-gradient;
+  }
+}
+[data-3d-buttons] .btn-dark {
+  &::before {
+    background: $dark-gradient;
+  }
 }
