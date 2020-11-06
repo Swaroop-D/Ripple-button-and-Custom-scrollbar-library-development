@@ -1,5 +1,5 @@
 ##### Hi friend, this Github Repository now has been changed a testing/beta channel! New releases will be on a new repo!
-###### Important note for my followers and others of course, please feel free to contribute to this library... Our motto is to help people out with a lot of customization as per their needs regardin buttons!!😊
+###### Important note for anyone visiting this repository, please feel free to contribute to this library... Our motto is to help people out with a lot of customization as per their needs regardin buttons!!😊
 
 # Rippllino • A full basket of highly creative buttons_beta-channel
 
