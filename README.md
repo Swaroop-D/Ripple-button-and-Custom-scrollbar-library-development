@@ -5,7 +5,7 @@
 Are you tired of styling buttons and handling css errors for them? Then, we've got you're back.. A simple solution for creative button is here😍
 
 ## How to use v0.2.5@aplha
-Hey, look the latest one here(https://swaroop-d.github.io/Rippllino-tester/)
+Hey, look the latest one [here](https://swaroop-d.github.io/Rippllino-tester/)
 
 Link the `rippllino.js` to your `.html` page and init the Rippll by using the following JS in the `script` tag: -
 
