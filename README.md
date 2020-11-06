@@ -1,10 +1,8 @@
-#### This version of the main version has the most number of bugs... Please Do not use it for a production build!!!
+##### Hi friend, this Github Repository now has been changed a testing/beta channel! New releases will be on a new repo!
 
-# Rippllino • A full basket of highly creative buttons_development
+# Rippllino • A full basket of highly creative buttons_beta-channel
 
 Are you tired of styling buttons and handling css errors for them? Then, we've got you're back.. A simple solution for creative button is here😍
-
-#### Have a look at it [here](https://swaroop-d.github.io/Rippllino/)
 
 ## How to use v0.2.5@aplha
 
