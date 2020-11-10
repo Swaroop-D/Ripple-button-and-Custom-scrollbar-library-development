@@ -1,7 +1,7 @@
-##### Hi friend, this Github Repository now has been changed a testing/beta channel! New releases will be on a new repo!
+##### Hi friend, this Github Repository now has been changed a testing/beta channel! New beta releases will be on a new repo!
 
 # Rippllino • A full basket of highly creative buttons_beta-channel
-#### Hey, are you excited, Rippllino v1.0.2 will be finally released this week. Stay tuned for the major update😍😍😍
+#### Hey, are you excited, Rippllino v1.0.2 will be finally released next week. Stay tuned for the major update😍😍😍
 ###### I apologise for not updating this beta channel... Newer updates will now be posted.
 
 Are you tired of styling buttons and handling css errors for them? Then, we've got you're back.. A simple solution for creative button is here😍
