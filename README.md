@@ -11,8 +11,6 @@ Hey, look the latest one [here](https://swaroop-d.github.io/Rippllino-tester/)
 
 Link the `rippllino.js` to your `.html` page and init the Rippll by using the following JS in the `script` tag: -
 
-##### We'll be releasing Bulma, Tailwind and Material CSS button styles in the future!!! Stay tuned for all of them... (Let us know if you have any suggestion about beautiful css buttons for building webpages fastly...)
-
 `let rippllino = new Rippllino({ });`
 
 Additional options supported by now: -
